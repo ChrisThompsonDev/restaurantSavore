@@ -1,0 +1,557 @@
+
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+  width: 100%;
+  font-size: 62.5%;
+  font-family: 'Didact Gothic', sans-serif;
+  font-family: 'DM Serif Text', serif;
+  font-family: 'Roboto', sans-serif;
+
+}
+
+body {
+
+}
+h1, h2 {
+  /*border: 1px solid black;*/
+  font-size: 10rem;
+  font-weight: 900;
+  line-height: 1.2;
+  /*width: 50%;*/
+  font-family: 'Didact Gothic', sans-serif;
+  font-family: 'DM Serif Text', serif;
+}
+h2 {
+  font-size: 8rem;
+}
+h3 {
+  color: orange;
+  margin: 1% 1% 1% 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+/******************************************
+/* DIV
+/*******************************************/
+#div1 {
+  background-image: url("../assets/mainBackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+}
+/******************************************
+/* HEADER
+/*******************************************/
+header {
+  clear: both;
+  height: 55px;
+  padding: 1% 10%;
+  margin-bottom: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  width: 8%;
+  float: left;
+}
+header nav {
+  width: 55%;
+}
+header nav ul {
+  list-style-type: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+header nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/******************************************
+/* MAIN
+/*******************************************/
+main {
+  width: 100%;
+  height: auto;
+  padding: 10%;
+  background-size: cover;
+}
+main > section {
+  width: 50%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+main div {
+  /* border: 1px solid black; */
+  border-right: none;
+  width: 100%;
+  height: 50px;
+  display: inline-block;
+
+}
+#searchBar {
+  width: 85%;
+  padding-left: 2%;
+  border-radius: 8px 0 0 8px;
+  background-color: white;
+}
+#searchBar input {
+    height: 50px;
+    width: 90%;
+    border: none;
+    background: none;
+}
+main div button {
+  border: 1px solid orange;
+  border-radius: 0 8px 8px 0;
+  background: orange;
+  width: 14%;
+  height: 50px;
+  color: white;
+}
+main section {
+  font-size: 1.5rem;
+
+}
+
+main section section {
+  width: 100%;
+  margin: 5% 5% 5% 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.fa-brands {
+  color: orange;
+}
+main section section span {
+  margin-right: 8%;
+
+}
+/******************************************
+/* SECTION 2: ABOUT US
+/*******************************************/
+
+#section2 {
+  border: 1px solid black;
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  /* padding: 3% 3% 3% 27%; */
+  background-image: url("../assets/section2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+}
+#twoDivRight {
+  margin-left: 43%;
+  width: 80%;
+  height: auto;
+
+}
+
+#twoDivRight h2 {
+  margin: 1% 1% 2% 0;
+  font-size: 9rem;
+  font-weight: 900;
+}
+#twoDivRight p {
+  margin: 1% 1% 2% 1%;
+  font-size: 1.7rem;
+  font-weight: bold;
+  line-height: 2;
+  width: 75%;
+  height: auto;
+}
+#discoverMenu button {
+  border: 1px solid orange;
+  border-radius: 8px;
+  background: orange;
+  width: 14%;
+  height: 50px;
+  color: white;
+}
+/******************************************
+/* SECTION3: Order Online Now
+/*******************************************/
+#section3 {
+  /*border: 1px solid black;*/
+  width: 100%;
+  height: auto;
+  background-color: #f2f6f7;
+  padding: 3% 5%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#section3 h2 {
+  /*border: 1px solid black;*/
+  margin: 0 1% 2% 0;
+
+}
+#section3 ul {
+  border-bottom: 1px solid black;
+  width: 50%;
+  margin: 0 25%;
+  height: 30px;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#section3 ul li {
+  /*border: 1px solid black;*/
+  /*float: left;*/
+  text-align: center;
+  /*margin: 0 20px;*/
+  font-size: 2rem;
+  font-weight: bold;
+  
+}
+#section3 ul li:hover {
+  color: orange;
+  border-bottom: 2px solid orange;
+}
+#section3 section {
+  display: flex;
+  height: auto;
+}
+#orderPics {
+  display: flex;
+  justify-content: space-between;
+}
+#section3 section > div {
+  width: 22%;
+  height: 400px;
+  
+  
+}
+.column1 {
+  background-image: url("../assets/orderImage1.jpg");
+}
+.column2 {
+  background-image: url("../assets/orderImage2.jpg");
+}
+.column3 {
+  background-image: url("../assets/orderImage3.jpg");
+}
+.column4 {
+  background-image: url("../assets/orderImage4.jpg");
+}
+.column1, .column2, .column3, .column4 {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#section3 img {
+  /*margin-top: 20px;*/
+}
+
+/******************************************
+/* SECTION 4: Book A Table
+/*******************************************/
+/* #section4 {
+  border: 1px solid black;
+  width: 100%;
+  height: 1200px;
+  padding: 3% 5%;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+#section4 > h2 {
+  /*border: 1px solid black;*/
+/*   margin: 1% 1% 2% 0;
+  
+  font-weight: 900;
+} */
+/* .fa-phone {
+  margin: 1% 0;
+  font-size: 3rem;
+  color: orange;
+  width: 100%;
+}
+
+#section4 span {
+  font-size: 2rem;
+  margin: 1%;
+  font-weight: bold;
+}
+
+#section4 > h4 a {
+  font-size: 3rem;
+  color: orange;
+  font-weight: bold;
+  margin: 1%;
+  font-family: 'Didact Gothic', sans-serif;
+  font-family: 'DM Serif Text', serif;
+}
+#section4 > div {
+  width: 50%;
+  float: left;
+}
+#section4 > div span {
+  width: 100%;
+  float: left;
+  font-size: 1.7rem;
+  margin: 10px 0;
+}
+#section4 div .time {
+  font-weight: bolder;
+  font-size: 2.5rem;
+  font-family: 'Didact Gothic', sans-serif;
+  font-family: 'DM Serif Text', serif;
+}
+#video {
+  margin: 1% 0;
+  width: 60%;
+  height: 600px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.fa-circle-arrow-left, .fa-circle-arrow-right {
+  font-size: 5rem;
+  color: orange;
+  font-weight: 900;
+
+}
+#section4Img {
+  background-image: url(../assets/section4Img.png);
+  background-size: cover;
+  background-repeat: none; */
+  
+  /*border: 1px solid black;*/
+  /* width: 100%;
+  height: 600px;
+
+} */ 
+/******************************************
+/* SECTION 5: Testimonials
+/*******************************************/
+#section5 {
+  /*border: 1px solid black;*/
+  width: 100%;
+  height: 700px;
+  text-align: center;
+  padding: 3% 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#section5 h2 {
+  /*border: 1px solid black;*/
+  margin: 1% 0;
+
+}
+#section5 div {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1% 0;
+}
+#section5 div > div {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-image: url(../assets/customer.png);
+  background-repeat: none;
+  background-size: contain;
+  margin: 1% 0;
+}
+#section5 h5 {
+  /*border: 1px solid black;*/
+  margin: 1% 0;
+  font-size: 3rem;
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+  width: 100%;
+  font-weight: 900;
+}
+#section5 h6 {
+  /*border: 1px solid black;*/
+  margin: 1% 0;
+  font-size: 1.7rem;
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+  width: 100%;
+  color: gray;
+}
+#stars {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 100px;
+  background-image: url(../assets/5stars.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#section5 p {
+  margin: 1% 0;
+  font-size: 1.7rem;
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+  width: 100%;
+  line-height: 2;
+}
+footer {
+  width: 100%;
+  font-size: 2rem;
+  text-align: center;
+  padding: 10px;
+  height: auto;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media all and (max-width: 770px) {
+  #div1 {
+    width: 100%;
+  }
+  nav {
+    display: none;
+  }
+  #div1 main section {
+    width: 100%;
+  }
+  h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
+  #searchBar {
+    width: 78%;
+  }
+  #div1 main section div button {
+    width: 20%;
+  }
+  #div1 {
+    width: 100%;
+  }
+  /*------------------*/
+  #section2 {
+    margin: 0;
+    padding: 2% 0;
+    display: flex;
+    justify-content: center;
+  }
+  #twoDivRight {
+    margin: 0;
+    padding: 0;
+  }
+  #twoDivRight h3 {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  #twoDivRight h2 {
+    font-size: 5rem;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  #twoDivRight p {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  #discoverMenu {
+    display: flex;
+    justify-content: center;
+  }
+  #discoverMenu button {
+    width: 20%;
+  }
+  #section3 {
+    height: 2000px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  #section3 h3 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #section3 h2 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #section3 ul {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #orderPics {
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  #section3 section > div {
+    width: 100%;
+    height: 400px;
+  }
+  #section5 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media all and (max-width: 1280px) {
+  #section2 {
+    background-image: none;
+  }
+}
